@@ -1,0 +1,89 @@
+.screen{
+    position:relative;
+    width:100%;
+
+}
+
+.screen img{
+    width:200vh;
+    height:100vh;
+}
+
+.clickerButton button {
+    position:relative;
+    padding: 16px;
+    background-color: rgb(241, 241, 241);
+    border-radius: 16px;
+    top: -70vh;
+    left: 82vh;
+    width:30vh;
+    height:30vh;
+    background-image:url('https://tinyurl.com/4d3tsxkk');
+    background-size:cover;
+}
+
+.incClicker button{
+    position:relative;
+    padding: 16px;
+    background-color:black;
+    border-radius: 16px;
+    top:-65vh;
+    left:82vh;
+    width:30vh;
+    height:8vh;
+    color:aliceblue;
+    font-size: 3vh
+}
+
+.achText{
+    position:absolute;
+    font-size: 3vh;
+    top:20vh;
+    left:25vh;
+    color:white;
+    font-family:Helvetica;
+    
+}
+
+.incTimer{
+    position:absolute;
+    top:68vh;
+    left:70vh;
+    color:white;
+    font-family: Helvetica;
+    font-size:3vh;
+}
+
+
+.counterLabelText {
+    position:absolute;
+    top:20vh;
+    left:93.5vh;
+    color:white;
+    font-family: Helvetica;
+    font-size: 4vh;
+}
+
+.rewardLabelText{
+    position:absolute;
+    top:70vh;
+    left:18vh;
+    color:white;
+    font-family: Helvetica;
+    font-size: 3vh;    
+}
+
+.mainLabels img{
+    position:absolute;
+    top:11.3vh;
+    left:15vh;
+    width:40vh;
+    height:20vh;
+}
+
+.textFrame img{
+    position:absolute;
+    top:30vh;
+    width:40vh;
+    height:40vh;    
+}
