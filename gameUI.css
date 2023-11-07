@@ -5,7 +5,7 @@
 }
 
 .screen img{
-    width:200vh;
+    width:100vw;
     height:100vh;
 }
 
@@ -15,10 +15,10 @@
     background-color: rgb(241, 241, 241);
     border-radius: 16px;
     top: -70vh;
-    left: 82vh;
-    width:30vh;
+    left: 42.5vw;
+    width:15vw;
     height:30vh;
-    background-image:url('assets/floppa.png');
+    background-image:url("../assets/floppa.jpg");
     background-size:cover;
 }
 
@@ -28,18 +28,18 @@
     background-color:black;
     border-radius: 16px;
     top:-65vh;
-    left:82vh;
-    width:30vh;
-    height:8vh;
+    left: 45%;
+    width:11vw;
+    height:7vh;
     color:aliceblue;
     font-size: 3vh
 }
 
 .achText{
     position:absolute;
-    font-size: 3vh;
+    font-size: 3vmin;
     top:20vh;
-    left:25vh;
+    left:13vw;
     color:white;
     font-family:Helvetica;
     
@@ -48,7 +48,7 @@
 .incTimer{
     position:absolute;
     top:68vh;
-    left:70vh;
+    left:40vw;
     color:white;
     font-family: Helvetica;
     font-size:3vh;
@@ -58,7 +58,7 @@
 .counterLabelText {
     position:absolute;
     top:20vh;
-    left:93.5vh;
+    left:48%;
     color:white;
     font-family: Helvetica;
     font-size: 4vh;
@@ -67,7 +67,7 @@
 .rewardLabelText{
     position:absolute;
     top:70vh;
-    left:18vh;
+    left:10vw;
     color:white;
     font-family: Helvetica;
     font-size: 3vh;    
@@ -76,14 +76,36 @@
 .mainLabels img{
     position:absolute;
     top:11.3vh;
-    left:15vh;
-    width:40vh;
+    left:8vw;
+    width:20vw;
     height:20vh;
 }
 
 .textFrame img{
     position:absolute;
     top:30vh;
-    width:40vh;
+    width:20vw;
     height:40vh;    
+}
+
+.shopLabelText{
+    position:absolute;
+    top:20vh;
+    left:73vw;
+    font-size:3vmin;
+    font-family: Helvetica;
+    color:white;
+}
+
+.shop button{
+    position:absolute;
+    top:35vh;
+    left:72.5vw;
+    width:20vh;
+    height:7vh;
+    padding: 16px;
+    border-radius: 16px;
+    background-color:black;
+    color:white;
+    font-size:2.5vh
 }

@@ -19,16 +19,83 @@ var startTime = new Date();
 
 var time = startTime.getTime();
 
+//main button 
+document.getElementById('mainClicker').addEventListener("click", function(){
+    count = count + clickValue;
+    updateCount(count);
+    countCheck(count);
+    setInterval(upTime, 100);
+});
 
-function updateCounts(count, currentInc){
+//inc clicker
+document.getElementById('incClicker').addEventListener("click", function(){  
+    if (canClick){
+        count = count + currentInc;
+        updateCount(count);
+        stopTimer();
+        resetTime();
+        canClick = false;
+        buttonPressed = false;
+        myTimer = setInterval(timer, 1000);
+        
+    }
+});
+
+//upgrade inc clicker
+document.getElementById('incUpgrade').addEventListener("click", function(){
+    if (count>=AcurrentPrice){
+        count = count - AcurrentPrice;
+        updateCount(count);
+        currentInc = currentInc*2;
+        AcurrentPrice = Math.round(AcurrentPrice*1.5);
+
+        let incPrice = document.getElementById("incUpgrade");
+        incPrice.innerHTML = AcurrentPrice;
+        let incInterval = document.getElementById("incClicker");
+        incInterval.innerHTML = "+"+currentInc;
+        
+    } 
+});
+
+//upgrade click value
+document.getElementById('clickUpgrade').addEventListener("click", function(){
+    if (count>=BcurrentPrice){
+        count = count - BcurrentPrice;
+        updateCount(count);
+        clickValue = clickValue+1;
+        BcurrentPrice = Math.round(BcurrentPrice*1.5);
+
+        let clickUpgradePrice = document.getElementById("clickUpgrade");
+        clickUpgradePrice.innerHTML = BcurrentPrice;
+        
+    }
+})
+
+//autoclicker
+document.getElementById('autoClicker').addEventListener("click", function(){
+    if (count>=CcurrentPrice){
+        count = count - CcurrentPrice;
+        updateCount(count);
+        CcurrentPrice = Math.round(CcurrentPrice*1.25);
+        acInc = acInc + 1;
+
+        let autoClickerPrice = document.getElementById("autoClicker");
+        autoClickerPrice.innerHTML = CcurrentPrice;
+    }
+})
+
+function autoClicker(){
+    count = count+acInc;
+    updateCount(count);
+}
+setInterval(autoClicker, 1000);
+
+
+
+
+function updateCount(count){
     let currentCount = document.getElementById("counter");
     currentCount.innerHTML = count;
-    //setText('label9', "Current Balance: "+count);
-    //setText("button3", '+'+currentInc);
-    //setText("label2", count);
-    //setText("label13", "Current: +" + currentInc);
-    //setText("label14", "Current: +" + clickValue);
-    //setText("label16", "Current: +" + acInc);
 }
 
 
@@ -116,20 +183,10 @@ function incClicker(inc){
 }
 
 //increment clicker
-function autoClicker(){
-    count = count+acInc;
-    updateCounts(count,currentInc);
-}
 
 
-//main button 
-document.getElementById('mainClicker').addEventListener("click", function(){
-    count = count + clickValue;
-    countCheck(count);
-    setInterval(upTime, 100);
-    updateCounts(count, currentInc);
-});
 
+//Timer//
 var myTimer;
 
 function stopTimer(){
@@ -169,18 +226,7 @@ function resetTime(){
 
 myTimer = setInterval(timer, 1000);
 
-//inc clicker
-document.getElementById('incClicker').addEventListener("click", function(){  
-    if (canClick){
-        count = count + currentInc;
-        updateCounts(count);
-        stopTimer();
-        resetTime();
-        canClick = false;
-        buttonPressed = false;
-        myTimer = setInterval(timer, 1000);
-    }
-});
+
 
 
 
