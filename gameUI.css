@@ -18,7 +18,7 @@
     left: 42.5vw;
     width:15vw;
     height:30vh;
-    background-image:url("../assets/floppa.jpg");
+    background-image:url("/assets/floppa.jpg");
     background-size:cover;
 }
 
