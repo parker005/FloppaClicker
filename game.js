@@ -202,9 +202,7 @@ function timer(){
     let timerText = document.getElementById('incTimer');
     let now = new Date();
     let currentTimeMS = now.getTime();
-    console.log(currentTimeMS);
     let timeDiff = Math.round((10000-(currentTimeMS-buttonTime))/1000);
-    console.log(timeDiff)
 
     if (timeDiff>0){
         timerText.innerHTML = timeDiff;
@@ -220,7 +218,6 @@ function resetTime(){
         let buttonDate = new Date();
         buttonTime = buttonDate.getTime();
         buttonPressed = true;
-        console.log('time reset');
     }
 }
 
