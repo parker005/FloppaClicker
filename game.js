@@ -112,11 +112,7 @@ function rewardAch(number, achID){
     let rewardText = document.getElementById('reward');
     rewardText.innerHTML= msg;
     uList.push(aList[achID]); 
-    let achList = uList.toString();
-
-    for (var i=0; i<achList.split(',').length+1; i++){
-        achList = achList.replace(",", "<br>");
-    };
+    achList.join("<br>");
 
     let achElement = document.getElementById('achievements');
     
