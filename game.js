@@ -114,7 +114,7 @@ function rewardAch(number, achID){
     uList.push(aList[achID]); 
     let achList = uList.toString();
 
-    for (var i=0; i<achList.split(',').length-1; i++){
+    for (var i=0; i<achList.split(',').length; i++){
         achList = achList.replace(",", "<br>");
     };
 
