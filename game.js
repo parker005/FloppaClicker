@@ -159,9 +159,7 @@ function countCheck(count){
       notR5000 = false;
     }
     
-    var uListStr = uList.join("\n");
-    var ach = document.getElementById("achievements");
-    achievements.innerHTML = uListStr;
+    
 };
 
 function incClicker(inc){
