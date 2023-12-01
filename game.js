@@ -161,7 +161,7 @@ function countCheck(count){
     
     var uListStr = uList.join("\n");
     var ach = document.getElementById("achievements");
-    achievements.innerHTML = ach;
+    achievements.innerHTML = uListStr;
 };
 
 function incClicker(inc){
