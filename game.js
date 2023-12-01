@@ -159,14 +159,9 @@ function countCheck(count){
       notR5000 = false;
     }
     
-    var uListStr = uList.toString();
-    
-    //replace all commas with \n
-    for (var o=0; o<=uListStr.split(',').length; o++){
-      uListStr = uListStr.replace(",", "\n");
-    }
-    
-    //setText("label6", uListStr);
+    var uListStr = uList.join("\n");
+    var achievements = document.getElementById("achievements");
+    achievements.innerHTML = achievements;
 };
 
 function incClicker(inc){
