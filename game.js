@@ -160,8 +160,8 @@ function countCheck(count){
     }
     
     var uListStr = uList.join("\n");
-    var achievements = document.getElementById("achievements");
-    achievements.innerHTML = achievements;
+    var ach = document.getElementById("achievements");
+    achievements.innerHTML = ach;
 };
 
 function incClicker(inc){
